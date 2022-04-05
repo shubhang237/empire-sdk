@@ -17,6 +17,6 @@ const EmpireSdk = NativeModules.EmpireSdk
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return EmpireSdk.multiply(a, b);
+export function initSDK(): void {
+  EmpireSdk.init();
 }

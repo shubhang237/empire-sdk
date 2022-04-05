@@ -55,5 +55,6 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.facebook.react:react-native:+"
+    implementation "com.truecaller.android.sdk:truecaller-sdk:2.6.0"  // From node_modules
 }

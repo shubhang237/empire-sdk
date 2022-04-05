@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
   package="com.example.reactnativeempiresdk">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk tools:overrideLibrary="com.truecaller.android.sdk"/>
 
     <application
       android:name=".MainApplication"
@@ -22,6 +24,9 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      <meta-data
+      android:name="com.truecaller.android.sdk.PartnerKey"
+      android:value="${PARTNER_KEY}" />
     </application>
 
 </manifest>
